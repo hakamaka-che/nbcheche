@@ -346,7 +346,7 @@ function showMsg() {
 function readShareCode() {
   console.log(`开始`)
   return new Promise(async resolve => {
-    $.get({url: `https://raw.githubusercontent.com/shicheche-show/updateCode/main/shareCodes/jd_cash.json`, 'timeout': 10000}, (err, resp, data) => {
+    $.get({url: `https://raw.githubusercontent.com/hakamaka-che/updateCode/main/shareCodes/jd_cash.json`, 'timeout': 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)
@@ -453,7 +453,7 @@ function taskUrl(functionId, body = {}) {
   }
 }
 
-function getAuthorShareCode(url = "https://raw.githubusercontent.com/shicheche-show/updateCode/main/shareCodes/jd_cash.json") {
+function getAuthorShareCode(url = "https://raw.githubusercontent.com/hakamaka-che/updateCode/main/shareCodes/jd_cash.json") {
   return new Promise(resolve => {
     $.get({url, headers:{
         "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/87.0.4280.88"
@@ -472,7 +472,7 @@ function getAuthorShareCode(url = "https://raw.githubusercontent.com/shicheche-s
     })
   })
 }
-function getAuthorShareCode2(url = "https://raw.githubusercontent.com/shicheche-show/updateCode/main/shareCodes/jd_cash.json") {
+function getAuthorShareCode2(url = "https://raw.githubusercontent.com/hakamaka-che/updateCode/main/shareCodes/jd_cash.json") {
   return new Promise(resolve => {
     $.get({url, headers:{
         "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/87.0.4280.88"

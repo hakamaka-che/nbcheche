@@ -18,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: shicheche-show/jd_bean
+          repository: hakamaka-che/nbcheche
           ref: master
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
@@ -37,7 +37,7 @@ jobs:
       - name: 'jxcfdtx'
         run: |
           sleep 1
-          curl https://raw.githubusercontent.com/shicheche-show/jd_bean/main/jx_cfdtx.js -o jx_cfdtx.js
+          curl https://raw.githubusercontent.com/hakamaka-che/nbcheche/main/jx_cfdtx.js -o jx_cfdtx.js
           node jx_cfdtx.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}

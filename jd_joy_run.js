@@ -172,10 +172,10 @@ async function getToken() {
   }
 }
 //http://jd.turinglabs.net/api/v2/jd/joy/read/1/
-//https://raw.githubusercontent.com/shicheche-show/updateCode/main/backUp/joytoken.json
+//https://raw.githubusercontent.com/hakamaka-che/updateCode/main/backUp/joytoken.json
 function readToken() {
   return new Promise(resolve => {
-    $.get({url: `https://raw.githubusercontent.com/shicheche-show/updateCode/main/backUp/joytoken.json`, 'timeout': 10000}, (err, resp, data) => {
+    $.get({url: `https://raw.githubusercontent.com/hakamaka-che/updateCode/main/backUp/joytoken.json`, 'timeout': 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)

@@ -20,7 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: shicheche-show/jd_bean
+          repository: hakamaka-che/nbcheche
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -41,11 +41,11 @@ jobs:
           python-version: 3.7
       - name: '京东汽车兑换'
         run: |
-              curl https://raw.githubusercontent.com/shicheche-show/jd_bean/main/accwait.py -o accwait.py
+              curl https://raw.githubusercontent.com/hakamaka-che/nbcheche/main/accwait.py -o accwait.py
               python3 accwait.py 0.1 0.1 58
       - name: '运行'
         run: |
-          curl https://raw.githubusercontent.com/shicheche-show/jd_bean/main/jd_car_exchange.js -o jd_car_exchange.js
+          curl https://raw.githubusercontent.com/hakamaka-che/nbcheche/main/jd_car_exchange.js -o jd_car_exchange.js
           node jd_car_exchange.js       
       
          

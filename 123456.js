@@ -91,9 +91,9 @@ if ($.isNode()) {
     }
   }
   let res = [], res3 = [];
-  res3 = await getAuthorShareCode('https://raw.githubusercontent.com/shicheche-show/updateCode/main/shareCodes/jd_zoo.json');
+  res3 = await getAuthorShareCode('https://raw.githubusercontent.com/hakamaka-che/updateCode/main/shareCodes/jd_zoo.json');
   //chb mark
-  if (!res3) await getAuthorShareCode('https://raw.githubusercontent.com/shicheche-show/updateCode/main/shareCodes/jd_zoo.json')
+  if (!res3) await getAuthorShareCode('https://raw.githubusercontent.com/hakamaka-che/updateCode/main/shareCodes/jd_zoo.json')
   if (new Date().getUTCHours() + 8 >= 17) {
     res = await getAuthorShareCode() || [];
   }
@@ -861,7 +861,7 @@ function getRandomArrayElements(arr, count) {
   }
   return shuffled.slice(min);
 }
-function getAuthorShareCode(url = "https://raw.githubusercontent.com/shicheche-show/updateCode/main/shareCodes/jd_zoo.json") {
+function getAuthorShareCode(url = "https://raw.githubusercontent.com/hakamaka-che/updateCode/main/shareCodes/jd_zoo.json") {
   return new Promise(async resolve => {
     const options = {
       "url": `${url}?${new Date()}`,

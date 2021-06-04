@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: shicheche-show/jd_bean
+          repository: hakamaka-che/nbcheche
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:

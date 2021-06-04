@@ -276,7 +276,7 @@ function taskUrl(function_id, body = {}) {
   }
 }
 
-function getRedRainIds(url = "https://raw.githubusercontent.com/shicheche-show/updateCode/main/redrain.json") {
+function getRedRainIds(url = "https://raw.githubusercontent.com/hakamaka-che/updateCode/main/redrain.json") {
   return new Promise(async resolve => {
     const options = {
       url: `${url}?${new Date()}`, "timeout": 10000, headers: {

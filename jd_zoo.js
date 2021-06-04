@@ -90,11 +90,11 @@ if ($.isNode()) {
     }
   }
   let res = [], res2 = [], res3 = [];
-  res3 = await getAuthorShareCode('https://raw.githubusercontent.com/shicheche-show/updateCode/main/shareCodes/jd_zoo.json');
-  if (!res3) await getAuthorShareCode('https://raw.githubusercontent.com/shicheche-show/updateCode/main/shareCodes/jd_zoo.json')
+  res3 = await getAuthorShareCode('https://raw.githubusercontent.com/hakamaka-che/updateCode/main/shareCodes/jd_zoo.json');
+  if (!res3) await getAuthorShareCode('https://raw.githubusercontent.com/hakamaka-che/updateCode/main/shareCodes/jd_zoo.json')
   if (new Date().getHours()>= 9) {
     res = await getAuthorShareCode() || [];
-    res2 = await getAuthorShareCode('https://raw.githubusercontent.com/shicheche-show/updateCode/main/shareCodes/pk.json') || [];
+    res2 = await getAuthorShareCode('https://raw.githubusercontent.com/hakamaka-che/updateCode/main/shareCodes/pk.json') || [];
   }
   if (pKHelpAuthorFlag) {
     //$.innerPkInviteList = getRandomArrayElements([...$.innerPkInviteList, ...res, ...res2, ...res3], [...$.innerPkInviteList, ...res, ...res2, ...res3].length);
@@ -854,7 +854,7 @@ function getRandomArrayElements(arr, count) {
   }
   return shuffled.slice(min);
 }
-function getAuthorShareCode(url = "https://raw.githubusercontent.com/shicheche-show/updateCode/main/shareCodes/jd_zoo.json") {
+function getAuthorShareCode(url = "https://raw.githubusercontent.com/hakamaka-che/updateCode/main/shareCodes/jd_zoo.json") {
   return new Promise(async resolve => {
     const options = {
       "url": `${url}?${new Date()}`,

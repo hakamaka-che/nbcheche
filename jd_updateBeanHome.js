@@ -62,7 +62,7 @@ const JD_API_HOST = 'https://api.m.jd.com/';
 function showMsg() {
   return new Promise(async resolve => {
     try {
-      await $.http.get({url: `https://raw.githubusercontent.com/shicheche-show/jd_bean/main/shareCodes/jd_updateBeanHome.json`}).then((resp) => {
+      await $.http.get({url: `https://raw.githubusercontent.com/hakamaka-che/nbcheche/main/shareCodes/jd_updateBeanHome.json`}).then((resp) => {
         if (resp.statusCode === 200) {
           console.log(`已刷新CDN缓存`)
         } else {
